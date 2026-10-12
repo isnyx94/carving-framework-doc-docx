@@ -7,7 +7,6 @@ This file explains every folder and script in the repository: what it does, how 
 - **Core**: the framework itself. Start here.
 - **Main result**: produces a result reported in Chapters 4–5.
 - **Supporting**: a check, a sensitivity analysis or a helper.
-- **Figure**: draws a thesis figure from stored results.
 
 ## 1. Repository layout
 
@@ -15,7 +14,6 @@ This file explains every folder and script in the repository: what it does, how 
 classify/          Core framework: restorers, fragmenter, text metric, adapters, classifiers (Python package)
 reanalysis/        One folder per study; each script runs an experiment or analyses its results
   common/          Helpers shared by the studies (corrected text extraction, loading results)
-figures/           Scripts that draw the thesis figures from the stored results
 CODE_GUIDE.md      This file
 README.md          Short overview, installation and data sources
 ```
@@ -100,18 +98,5 @@ README.md          Short overview, installation and data sources
 | `09_global_multiplicity/` | `global_multiplicity_v3.py` | Corrects all 63 tests together (Holm and Benjamini–Hochberg) | Supporting | §5.12.11, Table 5.28 | D30 |
 | `10_appendix_examples/` | `examples.py`, `examples_strict.py`, `gen_appendix.py` | Worked recovery examples (public files only) and Appendix A tables | Supporting | Appendix A | — |
 | | `markup_check.py`, `markup_impact_probe.py` | Checks that found and measured the text-extraction defect | Supporting | §3.7.2 | — |
-
-## 5. `figures/`
-
-Each script writes PNG files to `output_figures/`.
-
-| Script | Figures | Thesis |
-|---|---|---|
-| `make_figures_classification.py` | Classification, coverage and oracle figures | Chapter 5, §§5.2–5.8 |
-| `make_pilot_figs.py` | Pilot-study and search-budget figures | §3.9, Figs 3.6–3.7 |
-| `make_ch4_figs.py` | Algorithm boxes, workflow diagrams and brief results | Chapter 4 |
-| `make_ch5_figs.py`, `make_figures_v20.py` | Restoration results (recall by severity, effects, CRC ablation, FAT32, writers) | §§5.12–5.15 |
-| `make_figures_v13.py`, `make_figures_v15.py` | Earlier diagrams and held-out, carver and FAT32 charts | Chapter 3 diagrams; §§5.12.4, 5.12.7 |
-| `fig_boiko.py`, `fig_e2e.py` | Prior-art comparison and end-to-end pipeline | Fig 5.22, Fig 4.12 |
 
 
