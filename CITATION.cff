@@ -1,0 +1,17 @@
+cff-version: 1.2.0
+message: "If you use this software, please cite the thesis below."
+title: "Developing a Carving Framework for Data Restoration of Composite File-Structure Document Types (DOC and DOCX): code and data release"
+authors:
+  - family-names: "Ramli"
+    given-names: "Nor Ika Shahirah"
+type: software
+license: MIT
+preferred-citation:
+  type: thesis
+  title: "Developing a Carving Framework for Data Restoration of Composite File-Structure Document Types (DOC and DOCX)"
+  authors:
+    - family-names: "Ramli"
+      given-names: "Nor Ika Shahirah"
+  institution:
+    name: "Universiti Malaysia Pahang"
+  thesis-type: "PhD thesis"
