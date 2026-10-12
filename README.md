@@ -14,7 +14,6 @@ The framework recovers document text from fragmented disk images by using the in
 ```
 classify/      core framework (restorers, fragmenter, text metric, adapters, classifiers)
 reanalysis/    one folder per study (main DOCX studies, FAT32 volumes, production carvers, DOC, ...)
-figures/       scripts that draw the thesis figures
 ```
 
 ## Install and run
